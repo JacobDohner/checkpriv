@@ -10,8 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.dohner.myapplication.MainActivity">
 
-    <TextView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/button"
+        android:background="@drawable/checkbutton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="You have checked your priviledge."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/textView" />
 </RelativeLayout>
